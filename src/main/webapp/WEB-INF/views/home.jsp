@@ -17,15 +17,17 @@
 <body>
 <h1>PRACTICE SPRING</h1>
  <c:if test="${login !='ok'}">
- <ul>
- 	<li><a href="login/form">로그인하기</a></li>
- 	<li><a href="">회원가입하기</a></li>
- </ul>
-  </c:if>
+	 <img src="resources/1.png">
+	 <ul>
+	 	<li><a href="login/form">로그인하기</a></li>
+	 </ul>
+ </c:if>
+  
  <c:if test="${login =='ok'}">
+	 <img src="../resources/2.png">
  	 <ul>
  		<li><a href="logout">로그아웃</a></li>
- 		<li><a href="">마이페이지</a></li>
+ 		<li><a href="myPage">마이페이지</a></li>
  	</ul>
  </c:if>
 </body>

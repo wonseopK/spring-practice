@@ -32,5 +32,16 @@
 				<button onclick= "location.href='../'">돌아가기</button>
 		</div>
 	</div>
+	<c:if test="${result == 'false'}">
+		<script type="text/javascript">
+			alert("비밀번호 불일치")
+		</script>
+ 	</c:if>
+  
+	 <c:if test="${result =='true'}">
+		 <script type="text/javascript">
+		 	location.href="ok";
+		 </script>
+	 </c:if>
 </body>
 </html>
