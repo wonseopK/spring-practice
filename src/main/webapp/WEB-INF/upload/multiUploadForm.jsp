@@ -28,12 +28,10 @@ li{
 <body>
 	<div class="inner">
 		<div class="container">
-			<h1>SPRING PRACTICE 개편</h1>
-			<ul>
-				<li><a href="file/uploadForm">파일 업로드</a></li>
-				<li><a href="file/multiUploadForm">파일여러개 업로드</a></li>
-				<li><a href="login/form">로그인</a></li>
-			</ul>
+			<h1>여러파일첨부</h1>
+			<input type="file" >
+			<button type="button" onclick="location.href='/uploadForm'">전송</button>
+			<button type="button" onclick="location.href='../'">홈으로</button>
 		</div>
 	</div>
 </body>

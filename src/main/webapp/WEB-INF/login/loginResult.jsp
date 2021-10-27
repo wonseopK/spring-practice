@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ taglib prefix="c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,38 +9,33 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 <style type="text/css">
+.info{
+	width: 150px;
+}
 .inner{
 	margin: 0 auto;
 	width: 1100px;
+	position: relative;
+	background-color: orange;
 }
 
 .container{
+	position: absolute;
+	background-color: pink;
 	width: 800px;
+	height: 300px;
+	left: 150px;
 }
-	
 </style>
 </head>
 <body>
-	<div class = "innser">
-		<div class = "container">
-			<form action="read" >
-				<input type = "text" name="id">
-				<input type = "password" name="pass">
-				<button class="submit">로그인</button>
-			</form>
-				<button onclick= "location.href='../'">돌아가기</button>
-		</div>
+<div class="inner">
+	<div class="container">
+		<h1>로그인 유저정보</h1>
+		<h3>아이디 : ${login.id}</h3>
+		<h3>비밀번호 : ${login.pw}</h3>
+		<button type="button" onclick="location.href='../'">홈으로</button>
 	</div>
-	<c:if test="${result == 'false'}">
-		<script type="text/javascript">
-			alert("비밀번호 불일치")
-		</script>
- 	</c:if>
-  
-	 <c:if test="${result =='true'}">
-		 <script type="text/javascript">
-		 	location.href="ok";
-		 </script>
-	 </c:if>
+</div>
 </body>
 </html>
