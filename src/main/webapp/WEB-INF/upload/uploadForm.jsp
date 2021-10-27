@@ -32,8 +32,11 @@
 <div class="inner">
 	<div class="container">
 		<h1>파일첨부</h1>
-		<input type="file">
-		<button type="button" onclick="location.href='/uploadForm'">전송</button>
+		<form action="upload" method="post">
+			<input type="text" name="title">
+			<input type="file" name="file">
+			<button type="submit">전송</button>
+		</form>
 		<button type="button" onclick="location.href='../'">홈으로</button>
 	</div>
 </div>
