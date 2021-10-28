@@ -32,7 +32,10 @@
 <div class="inner">
 	<div class="container">
 		<h1>파일첨부결과</h1>
-		
+		<h3>${title}</h3>
+		<h3>
+			<img src="../img/${fileName}" style="max-width: 300px;">
+		</h3>
 		<button type="button" onclick="location.href='../'">홈으로</button>
 	</div>
 </div>

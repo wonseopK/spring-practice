@@ -29,16 +29,16 @@
 </style>
 </head>
 <body>
-<div class="inner">
-	<div class="container">
-		<h1>파일첨부</h1>
-		<form action="upload" method="post">
-			<input type="text" name="title">
-			<input type="file" name="file">
-			<button type="submit">전송</button>
-		</form>
-		<button type="button" onclick="location.href='../'">홈으로</button>
+	<div class="inner">
+		<div class="container">
+			<h1>파일첨부</h1>
+			<form action="upload" method="post" enctype="multipart/form-data">
+				<input type="text" name="title" placeholder="파일이름">
+				<input type="file" name="file">
+				<button type="submit">전송</button>
+			</form>
+			<button type="button" onclick="location.href='../'">홈으로</button>
+		</div>
 	</div>
-</div>
 </body>
 </html>
